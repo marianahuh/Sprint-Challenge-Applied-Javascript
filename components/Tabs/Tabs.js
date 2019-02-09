@@ -9,7 +9,7 @@ class TabLink {
     // We need to find out if a user clicked 'all' cards or a specific category.  Follow the instructions below to accomplish this task:    
 
     // const tabEl = document.querySelectorAll('.tab');
-    // tabEl.addEventListener('click', (e) {});
+
     // Check to see if this.tabData is equal to 'all'
     if (this.tabData === 'all') {
       // If `all` is true, select all cards regardless of their data attribute values
@@ -84,5 +84,4 @@ class TabCard {
 - In your .forEach() method's callback function, return a new instance of TabLink and pass in each tab as a parameter
 
 */
-let tabs = document.querySelectorAll('.tab');
-tabs.forEach(tab => new TabLink(tab));
+let tabs = document.querySelectorAll('.tab').forEach(tab => new TabLink(tab));
