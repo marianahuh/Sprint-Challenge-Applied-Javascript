@@ -8,7 +8,6 @@ class TabLink {
     this.tabData = this.tabElement.dataset.tab;
     // We need to find out if a user clicked 'all' cards or a specific category.  Follow the instructions below to accomplish this task:    
 
-    // const tabEl = document.querySelectorAll('.tab');
 
     // Check to see if this.tabData is equal to 'all'
     if (this.tabData === 'all') {
@@ -43,7 +42,7 @@ class TabLink {
     // Iterate through the NodeList removing the .active-tab class from each element
     // tabs.forEach()
     tabs.forEach(tab => {
-      tab.classList.remove('active-tab')
+      this.tab.classList.remove('active-tab')
     });
     // Select all of the elements with the .card class on them
     // const cards = ;
@@ -51,7 +50,7 @@ class TabLink {
     // Iterate through the NodeList setting the display style each one to 'none'
     // cards.forEach()
     cards.forEach(card => {
-      card.classList.style.display = 'none'
+      this.card.classList.style.display = 'none'
     });
     // Add a class of ".active-tab" to this.tabElement
     // this.tabElement;
